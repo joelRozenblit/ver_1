@@ -1,0 +1,18 @@
+footer {
+    background-image: url(../images/bg_img/gray/body.png);
+    min-height: 100px;
+    text-align: center;
+}
+
+
+.bottom_nav {
+    padding: 8px;
+}
+
+.first_div {
+    display: flex;
+    padding: 8px;
+}
+
+
+/* responsive css */

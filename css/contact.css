@@ -1,0 +1,83 @@
+
+main{
+    min-height: 750px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+p{
+    margin: 0;
+    padding: 8px;
+    font-size: large;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+
+@media (max-width: 970px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 640px) {
+    
+}
+
+
+
+/* css main */
+
+main{
+    background-image: url(../images/bg_img/black/balck.jpg);
+    text-shadow: 
+    2px 2px 0 black, 
+    -2px 2px 0 black, 
+    2px -2px 0 black, 
+    -2px -2px 0 black;
+}
+
+main img{
+    border-radius: 20px;
+    max-height: 600px;
+    box-shadow:  0 4px 6px rgba(255, 255, 255, 0.3), 
+    0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.main_container{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+form{
+    padding: 8px;
+}
+
+input{
+    padding: 0;
+}

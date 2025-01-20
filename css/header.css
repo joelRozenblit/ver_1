@@ -1,0 +1,218 @@
+header {
+    background-image: url(../images/bg_img/gray/body.png);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+}
+
+.logo_link {
+    margin: 0;
+    width: 20%;
+}
+
+.top_nav {
+    padding: 10px 10px;
+    font-size: x-large;
+    width: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.top_nav hr {
+    width: 1px;
+    height: 30px;
+    border: 2px solid black;
+    margin: 8px;
+}
+
+.hamburger {
+    display: none;
+    /* מוסתר בדסקטופ */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+a,
+i {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+    padding: 8px;
+}
+
+
+i:hover,
+a:hover {
+    transform: scale(1.1);
+    color: rgb(255, 242, 218);
+}
+
+p {
+    margin: 0;
+    padding: 8px;
+    font-size: large;
+}
+
+.logo {
+    width: 200px;
+    padding: 8px;
+}
+
+.top_nav a {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.3),
+        0 1px 5px rgba(255, 255, 255, 0.2),
+        0 -1px 5px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+
+
+/* responsive css */
+@media (max-width: 1015px) {
+    .top_nav {
+        padding: 0;
+    }
+
+    a {
+        margin: 5;
+        padding: 0;
+    }
+
+    hr {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        width: 150px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 690px) {
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .top_nav {
+        font-size: medium;
+    }
+
+    .top_nav hr {
+        height: 20px;
+    }
+
+    .top_nav a {
+        margin: 0;
+        padding: 5;
+    }
+}
+
+@media (max-width: 530px) {
+    .top_nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        background-image: url(../images/bg_img/gray/body.png);
+    }
+
+    /* כפתור המבורגר */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        position: fixed;
+        /* מקם בצד שמאל */
+        top: 20px;
+        /* מרחק מהחלק העליון */
+        left: 20px;
+        /* מיקום בצד שמאל */
+        z-index: 100;
+    }
+
+    
+
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: black;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .menu-toggle:checked+.hamburger+.top_nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        /* גלוי בניידים */
+    }
+
+    .hamburger span:nth-child(1) {
+        transform-origin: top left;
+    }
+
+    .hamburger span:nth-child(2) {
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+
+    .hamburger span:nth-child(3) {
+        transform-origin: bottom left;
+    }
+
+}

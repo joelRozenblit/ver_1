@@ -1,0 +1,112 @@
+
+.first_con {
+    background-image: url(../images/bg_img/black/black-photoshop-background-png-15.jpg);
+}
+
+.second_con {
+    background-image: url(../images/bg_img/gray/pexels-life-of-pix-8892.jpg);
+}
+
+hr {
+    margin: 0;
+    height: 1px;
+    width: 70%;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+li {
+    padding: 8px;
+}
+
+main a {
+    color: wheat;
+}
+
+
+.title {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.second_con h2 {
+    color: rgb(201, 196, 196);
+    text-shadow:
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        -1px -1px 0 black;
+    margin: 0;
+    padding: 8px;
+}
+
+.bottom_con {
+    min-height: 500px;
+}
+
+.meals_div {
+    display: flex;
+    height: 80%;
+    width: auto;
+    gap: 4px;
+}
+
+.img_div {
+    overflow: hidden;
+    width: 25%;
+    position: relative;
+    margin: 5px 0;
+
+}
+
+.meals_div img {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.meals_div img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* responsive css */
+@media (max-width: 1015px) {
+    .bottom_con {
+        min-height: 400px;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .first_div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .first_div img {
+        display: none;
+    }
+
+    .bottom_con {
+        min-height: 300px;
+    }
+}
+
+
+@media (max-width: 530px) {
+
+}
